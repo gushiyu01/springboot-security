@@ -24,6 +24,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
         //开启记住我
         http.rememberMe().rememberMeParameter("remember");
+        http.csrf().disable();
     }
 
     @Override

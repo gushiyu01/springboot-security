@@ -13,7 +13,7 @@
 
 <div sec:authorize="isAuthenticated()">
 	<h2>
-		<span sec:authentication="name"></span>,您还，您的身份是：
+		<span sec:authentication="name"></span>,您好，您的身份是：
 		<span sec:authentication="principal.authorities"></span>
 	</h2>
 	<form th:action="@{/logout}" method="post">
