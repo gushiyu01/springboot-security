@@ -32,6 +32,7 @@ public class A {
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
+		System.out.println("first");
 		return "bbbb";
 	}
 }
