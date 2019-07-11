@@ -33,6 +33,7 @@ public class A {
 			e.printStackTrace();
 		}
 		System.out.println("first");
+		System.out.println("second");
 		return "bbbb";
 	}
 }
