@@ -1,10 +1,7 @@
 package com.gsy.security.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class KungfuController {
@@ -58,5 +55,9 @@ public class KungfuController {
 		return PREFIX+"level3/"+path;
 	}
 
-
+	@PostMapping("/selflogin")
+	public String selfLogin(String username, String password){
+		System.out.println(username + password);
+		return PREFIX+"";
+	}
 }

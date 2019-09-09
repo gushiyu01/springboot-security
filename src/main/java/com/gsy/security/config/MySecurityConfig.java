@@ -18,7 +18,8 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/level3/**").hasRole("VIP3");
 
         //开启自动配置登录功能
-        http.formLogin().loginPage("/userlogin");
+        //使用自定义登录页面，同时拿到登录请求入参
+        http.formLogin().loginPage("/userlogin").loginProcessingUrl("/selflogin");
         //开启自动配置的注销功能
         http.logout().logoutSuccessUrl("/");
 
