@@ -6,3 +6,9 @@
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
+#### to do
+* 0、使用MySQL
+* 1、注册功能
+* 2、权限授予功能
+* 3、简化授权验证
+* 4、使用redis
