@@ -24,7 +24,7 @@ public class A {
 		return "bbb";
 	}
 
-	@PostMapping("/ccc")
+	@PostMapping("/ccxc")
 	@ResponseBody
 	public String ccc(@RequestBody String stu){
 		try {
@@ -35,6 +35,20 @@ public class A {
 		System.out.println("first");
 		System.out.println("second");
 		System.out.println("third");
-		return "bbbb";
+		return "bbdddsssssdbb";
+	}
+
+
+
+
+
+	@PostMapping("/ddd")
+	public String ddd(@RequestBody String ddd){
+		try {
+			System.out.println("aaa");
+		} catch (Exception e) {
+
+		}
+		return null;
 	}
 }
