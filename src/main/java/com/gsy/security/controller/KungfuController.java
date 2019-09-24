@@ -55,9 +55,9 @@ public class KungfuController {
 		return PREFIX+"level3/"+path;
 	}
 
-	@PostMapping("/selflogin")
-	public String selfLogin(String username, String password){
-		System.out.println(username + password);
-		return PREFIX+"";
+	@GetMapping("/selfLogout")
+	public String selfLogout(){
+		System.out.println("222" + "111");
+		return "logout";
 	}
 }
