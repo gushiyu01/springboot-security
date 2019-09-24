@@ -12,15 +12,15 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         //super.configure(http);
-        http.authorizeRequests().antMatchers("/","/selfLogout").permitAll()
+        http.authorizeRequests().antMatchers("/").permitAll()
                 .antMatchers("/level1/**").hasRole("VIP1")
                 .antMatchers("/level2/**").hasRole("VIP2")
                 .antMatchers("/level3/**").hasRole("VIP3");
 
         //开启自动配置登录功能
         //使用自定义登录页面，同时拿到登录请求入参
-        http.formLogin().loginPage("/userlogin").loginProcessingUrl("/selflogin");
-        //开启自动配置的注销功能
+        http.formLogin().loginPage("/userlogin");
+        //开启自动配置的注销功能，自定义logout页面
         http.logout().addLogoutHandler(new MyLogoutFilter());
 
         //开启记住我

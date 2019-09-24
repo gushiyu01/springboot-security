@@ -3,6 +3,8 @@ package com.gsy.security.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 public class KungfuController {
 	private final String PREFIX = "pages/";
@@ -60,4 +62,5 @@ public class KungfuController {
 		System.out.println("222" + "111");
 		return "logout";
 	}
+
 }
