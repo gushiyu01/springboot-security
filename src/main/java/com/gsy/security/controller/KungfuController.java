@@ -3,10 +3,10 @@ package com.gsy.security.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-
 @Controller
 public class KungfuController {
+
+
 	private final String PREFIX = "pages/";
 	/**
 	 * 欢迎页
