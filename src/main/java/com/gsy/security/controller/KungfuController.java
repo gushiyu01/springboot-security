@@ -3,11 +3,15 @@ package com.gsy.security.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.logging.Logger;
+
 @Controller
 public class KungfuController {
 
+	private static final Logger logger = Logger.getLogger(KungfuController.class.getName());
 
 	private final String PREFIX = "pages/";
+	private final String PREFIX2 = "signin/";
 	/**
 	 * 欢迎页
 	 * @return
@@ -59,8 +63,13 @@ public class KungfuController {
 
 	@GetMapping("/selfLogout")
 	public String selfLogout(){
-		System.out.println("222" + "111");
+		logger.info("111");
 		return "logout";
+	}
+
+	@GetMapping("/userRegister")
+	public String userRegister() {
+		return PREFIX2+"index";
 	}
 
 }

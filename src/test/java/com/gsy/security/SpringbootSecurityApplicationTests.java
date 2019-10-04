@@ -126,4 +126,9 @@ public class SpringbootSecurityApplicationTests {
         }
     }
 
+    @Test
+    public void testCAS(){
+
+    }
+
 }

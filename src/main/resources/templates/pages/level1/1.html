@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+    <script type="text/javascript" src="../../../static/js/jquery.min.js"></script>
+    <script th:src="@{../../../static/js/jquery.min.js}" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
 </head>
 <body>
 	<a th:href="@{/}">返回</a>
 	<h1>罗汉拳</h1>
 	<p>罗汉拳站当央,打起来不要慌</p>
+	<button id="firstAjax">Ajax</button>
 </body>
+
+<script>
+	$( "#firstAjax" ).on( "click", function( event ) {
+		alert("ajax");
+		$.ajax({
+			url: "/aaa",
+			data: {
+				name: 'gushiyu'
+			},
+			success: function( result ) {
+				alert(result);
+			}
+		});
+	});
+</script>
 </html>
