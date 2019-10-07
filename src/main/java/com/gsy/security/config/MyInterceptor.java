@@ -1,7 +1,5 @@
 package com.gsy.security.config;
 
-import com.gsy.security.entity.Department;
-import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
