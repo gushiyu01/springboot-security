@@ -22,10 +22,10 @@ public class A {
 
 	@RequestMapping("/aaa")
 	@ResponseBody
-	public String aaa(String name){
+	public Department aaa(String name){
 		System.out.println(name);
 		Department dept = department.getDeptById(Integer.parseInt(name));
-		return dept.toString();
+		return dept;
 	}
 
 	@RequestMapping("/bbb")
