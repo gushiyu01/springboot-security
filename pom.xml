@@ -120,6 +120,13 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--while install, skip spring boot junit test-->
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
