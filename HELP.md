@@ -6,7 +6,7 @@
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
-#### to do
+#### to do list
 * 0、使用MySQL 已完成部分，需要与注册结合
 * 1、注册功能
 * 2、权限授予功能
